@@ -105,8 +105,11 @@ And now some code:
  * Filter process callback.
  */
 function _markdown_process($text, $format) {
-  include_once drupal_get_path('module', 'markdown') .'/markdown.php';
-  return Markdown($text);
+  if (!empty($text)) {
+    include_once drupal_get_path('module', 'markdown') .'/markdown.php';
+    $text = Markdown($text);
+  }
+  return $text;
 }
 
 /**
