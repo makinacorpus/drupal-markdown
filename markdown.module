@@ -3,7 +3,7 @@
 
 // == Core hooks ===============================================================
 
-function markdown_help($path = 'admin/help#marksmarty', $arg) {
+function markdown_help($path = 'admin/help#markdown', $arg) {
   switch ($path) {
     case 'admin/help#markdown':
       return t('<p>The Markdown filter allows you to enter content using <a href="http://daringfireball.net/projects/markdown">Markdown</a>, a simple plain-text syntax that is transformed into valid XHTML.</p>');
