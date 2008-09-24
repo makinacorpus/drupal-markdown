@@ -31,6 +31,11 @@ Quickstart
 3. Set up a new input format or add Markdown support to an existing format at
    Administer >> Site configuration >> Input formats
 
+4. For best security, ensure that the HTML filter is after the Markdown filter
+   on the "Reorder" page of the input format and that only markup you would
+   like to allow in via HTML and/or Markdown is configured to be allowed via the
+   HTML filter.
+
 Credits
 --------------------------------------------------------------------------------
 Markdown created                     by John Gruber: <http://daringfireball.net>  
